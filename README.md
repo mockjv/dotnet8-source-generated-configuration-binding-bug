@@ -1,5 +1,7 @@
 # Microsoft.Extensions.Configuration 8.x `EnableConfigurationBindingGenerator` Bug?
 
+Related issue: [`dotnet/runtime#94814`](https://github.com/dotnet/runtime/issues/94814)
+
 This repository tests and shows a behavioral difference in results of `IConfiguration.Get<TType>()` when `TType` is a
 class containing either an `Enum` or a `TimeSpan` while `EnableConfigurationBindingGenerator` is set to true.
 
